@@ -1,0 +1,25 @@
+:root {
+  --papel: #FAF9F6; --tinta: #0A0A0A; --gris: #6E6B64; --linea: #DAD7CF;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --papel: #121211; --tinta: #F2F0EA; --gris: #9A968D; --linea: #34322E; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--papel); color: var(--tinta);
+  font: 16px/1.6 "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+header { border-bottom: 1px solid var(--tinta); padding-bottom: 16px; margin-bottom: 32px; }
+h1 { font-size: 34px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 8px; }
+h2 {
+  font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700;
+  margin: 40px 0 12px; padding-bottom: 10px; border-bottom: 1px solid var(--tinta);
+}
+.meta { color: var(--gris); font-size: 13px; letter-spacing: 0.04em; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+a { color: var(--tinta); overflow-wrap: anywhere; }
+nav { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--linea); font-size: 14px; }
+nav a { margin-right: 16px; }
+.paso { border: 1px solid var(--linea); padding: 16px; margin: 12px 0; }
